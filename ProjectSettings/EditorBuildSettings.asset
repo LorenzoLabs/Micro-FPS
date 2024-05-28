@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FPS/Scenes/MainScene.unity
     guid: d794a2ef8ba31d847ad3c19d03e2ddb9
+  - enabled: 1
+    path: Assets/Scenes/BestTeamScene.unity
+    guid: 3986e2459b919c044b582a3ad95b2edc
   m_configObjects: {}
