@@ -28,6 +28,12 @@ namespace Unity.FPS.UI
         public void QuitGame()
         {
             Application.Quit();
-        }         
+        }
+
+        public void FullScreen()
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+
+        }
     }
 }

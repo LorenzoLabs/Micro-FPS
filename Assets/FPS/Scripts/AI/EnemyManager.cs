@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 namespace Unity.FPS.AI
 {
