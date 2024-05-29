@@ -7,8 +7,6 @@ public class Scoring : MonoBehaviour
 {
     
     public TMPro.TextMeshProUGUI enemyKillCountText;
-
-    public GameObject myObject;
     
     private int _enemyKillCount;
     
