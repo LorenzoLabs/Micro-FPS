@@ -7,13 +7,16 @@ public class Scoring : MonoBehaviour
 {
     
     public TMPro.TextMeshProUGUI enemyKillCountText;
+    public TMPro.TextMeshProUGUI finalScoreText;
     
     private int _enemyKillCount;
+    private int _finalScore=0;
     
     // Start is called before the first frame update
     void Start()
     {
         enemyKillCountText.text = "Enemies Killed: ";
+        finalScoreText.text = "Final Score: ";
         _enemyKillCount = this.GetComponent<EnemyManager>().NumberOfEnemiesTotal-this.GetComponent<EnemyManager>().NumberOfEnemiesRemaining;
 
         enemyKillCountText.text = enemyKillCountText.text + _enemyKillCount.ToString();
@@ -25,5 +28,8 @@ public class Scoring : MonoBehaviour
         _enemyKillCount = this.GetComponent<EnemyManager>().NumberOfEnemiesTotal-this.GetComponent<EnemyManager>().NumberOfEnemiesRemaining;
 
         enemyKillCountText.text = "Enemies Killed: " + _enemyKillCount.ToString();
+
+        _finalScore = 10 * _enemyKillCount;
+        finalScoreText.text = "Final Score: " + _finalScore.ToString();
     }
 }
